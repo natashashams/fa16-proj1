@@ -1,0 +1,2 @@
+<%= flash[:error] = @pokemon.errors.full_messages.to_sentence %>
+  <%= button_to "Try again", new_pokemon_path, :class => "button medium", :method => :patch %>

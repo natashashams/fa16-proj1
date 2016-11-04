@@ -1,2 +1,10 @@
 <td><%= link_to trainer.name, trainer %></td>
 <td><%= link_to trainer.email, trainer %></td>
+<% trainer.pokemons.each do |pokemon| %>
+                <td> <%= pokemon.name %> Level: <%= pokemon.level %> Health: <%= pokemon.health %>   <%= button_to "Damage!!", damage_path(id: pokemon.id), :class => "button medium", :method => :patch %> 
+                  </td>
+<% end %>
+<%if trainer.name == current_trainer.name %>
+	<td><%= button_to "Create Pokemon!", new_pokemon_path, :class => "button medium", :method => :patch %></td>
+<%end%>
+<td></td>
