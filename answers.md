@@ -21,5 +21,6 @@ The home controller's index method is called when we go to localhost. This metho
 	-application.html.erb is the default for rendering any page, and already renders 'layouts/messages'. This uses _messages.html.erb, which provides a standard convention to display alerts and other notices, including flash messages! So this is used to display the error message nicely.
 
 # Give us feedback on the project and decal below!
+	-I liked the complexity of the project, but I think it is hard to debug! More debugging hints posted would be helpful
 
 # Extra credit: Link your Heroku deployed app
